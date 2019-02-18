@@ -15,18 +15,20 @@ public class SecondActivity extends AppCompatActivity {
 
     public void scheduleFunction(View view)
     {
-
-
+        Intent schedule = new Intent(SecondActivity.this,Schedule.class);
+        startActivity(schedule);
     }
 
     public void currentPatientFunction(View view)
     {
-
+        Intent currentPateint = new Intent(this,CurrentPatient.class);
+        startActivity(currentPateint);
     }
 
     public void paymentFunction(View view)
     {
-
+        Intent payment = new Intent(this,Payment.class);
+        startActivity(payment);
     }
 
     @Override
