@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ReceptionPannel</string>
+    <string name="User_id">UserID :-</string>
+    <string name="User_id_hint">Enter your username</string>
+    <string name="password">Password :-</string>
+    <string name="password_hint">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="new_patient">New Pateint :-</string>
+    <string name="schedule">Schedule :-</string>
+    <string name="current_patient">Current Patient :-</string>
+    <string name="Payment">Payment :-</string>
+    <string name="click_here">Click here</string>
 </resources>
