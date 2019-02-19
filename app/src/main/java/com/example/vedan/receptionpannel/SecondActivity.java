@@ -9,7 +9,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void registrationFunction(View view)
     {
-        Intent newpatient = new Intent(SecondActivity.this,PateintRegistration.class);
+        Intent newpatient = new Intent(SecondActivity.this,PatientRegistration.class);
         startActivity(newpatient);
     }
 

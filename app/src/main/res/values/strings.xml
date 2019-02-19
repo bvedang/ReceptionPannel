@@ -10,4 +10,7 @@
     <string name="current_patient">Current Patient :-</string>
     <string name="Payment">Payment :-</string>
     <string name="click_here">Click here</string>
+    <string name="mobile_no">Mobile No:-</string>
+    <string name="mobile_no_hint">Enter your mobile no....</string>
+    <string name="register">Register</string>
 </resources>
