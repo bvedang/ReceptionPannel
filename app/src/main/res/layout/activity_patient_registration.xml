@@ -44,5 +44,6 @@
         android:hint="@string/mobile_no_hint"
         android:inputType="phone"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        android:autofillHints="" tools:targetApi="o"/>
 </android.support.constraint.ConstraintLayout>
