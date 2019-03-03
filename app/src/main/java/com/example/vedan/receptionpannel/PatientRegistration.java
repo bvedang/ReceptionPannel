@@ -22,13 +22,13 @@ public class PatientRegistration extends AppCompatActivity {
         mobileno = findViewById(R.id.mobileIDText);
         name = findViewById(R.id.nameText);
         Toast.makeText(this, "Message sent to "+mobileno.getText().toString(), Toast.LENGTH_SHORT).show();
-        databaseReference.child(name.getText().toString()).child(mobileno.getText().toString()).setValue("1");
+        databaseReference.child("Patient").push().child(name.getText().toString()).child(mobileno.getText().toString()).setValue("1");
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_registration);
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Patient");
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 }
 }
