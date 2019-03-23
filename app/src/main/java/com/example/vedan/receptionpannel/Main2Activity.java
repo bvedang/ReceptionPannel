@@ -1,5 +1,6 @@
 package com.example.vedan.receptionpannel;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 public class Main2Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +32,8 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                 R.string.navigation_drawer_open,R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-        if(savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DoctorFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_doctor);
         }
 
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -51,7 +49,8 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ReceptionFragment()).commit();
                 break;
             case R.id.nav_pharmacist:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PharmacistFragment()).commit();
+                Intent pharmacist = new Intent(this,Pharmacist.class);
+                startActivity(pharmacist);
                 break;
         }
         return true;
