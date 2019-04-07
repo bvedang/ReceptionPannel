@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/oldPatient"
+        android:layout_width="103dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/blue"
+        android:text="@string/old"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/newPatient"
+        app:layout_constraintTop_toTopOf="@+id/newPatient" />
+
+    <Button
+        android:id="@+id/newPatient"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="236dp"
+        android:background="#2196f3 "
+        android:text="@string/newb"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

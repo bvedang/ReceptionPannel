@@ -34,4 +34,11 @@
     <string name="qr_code_scanner">QR CODE SCANNER</string>
     <string name="med">Med</string>
     <string name="xyz">XYZ</string>
+    <string name="patientid">PatientID :-</string>
+    <string name="enter_your_unique_id">Enter your unique id</string>
+    <string name="newb">New</string>
+    <string name="old">Old</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="button">Button</string>
+    <string name="verify">Verify</string>
 </resources>

@@ -11,9 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Pharmacist"></activity>
+        <activity android:name=".OldPatientActivity"></activity>
+        <activity android:name=".NewPatientActivity" />
+        <activity android:name=".PatientActivities" />
+        <activity android:name=".Pharmacist" />
         <activity
-            android:name=".Main2Activity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
